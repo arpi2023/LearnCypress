@@ -1,0 +1,12 @@
+import data from "../fixtures/login.json"
+describe('template spec', () => {
+    
+    it('Verify Login with Valid input details', () => {
+        cy.visit('/web/index.php/auth/login')
+        cy.get('#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div:nth-child(2) > div > div:nth-child(2) > input').type(data.username)
+        cy.get ('input[name="password"]').type(data.password)
+        cy.get('#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div.oxd-form-actions.orangehrm-login-action > button').click()
+        cy.contains("Dashboard").should("be.visible")
+    
+      })
+  })

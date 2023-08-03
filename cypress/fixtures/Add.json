@@ -1,0 +1,13 @@
+ {
+
+ "username" :"Admin",
+ "password" : "admin123",
+ "PGName" : "Grade17",
+ "EmploymentStatus" : "Internship",
+ "JobCategories" : "Carpenter",
+ "WorkShifts" : "Common",
+ "Starttime": "10:00 AM", 
+ "Endtime" : "6:00 PM"
+
+ }
+    
