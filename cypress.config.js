@@ -14,6 +14,8 @@ module.exports = defineConfig({
       "username" : "Admin",
       "password": "admin123" 
     },
+    //"video" :"false",
+    //"videosFolder" :"cypress/Arpitha"
     setupNodeEvents(on, config) {
       // implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on);
