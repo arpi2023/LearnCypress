@@ -1,3 +1,4 @@
+const cypress = require("cypress");
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
@@ -6,6 +7,8 @@ module.exports = defineConfig({
     "baseUrl":"https://opensource-demo.orangehrmlive.com",
     "defaultCommandTimeout":50000,
     "pageLoadTimeout":120000,
+     "specPattern":"cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+     "excludeSpecPattern": "cypress\e2e\regressiontests\Action.js",
     //"viewportHeight":1180,
     //"viewportWidth":820,
     //"retries" : { "openMode": 1, "runMode": 1},
